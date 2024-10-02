@@ -65,7 +65,7 @@ public class SceneLoader
 
         foreach (Entity entity in loadLast) { scene.Spawn(entity); }
         
-        scene.Spawn(new GUI());
+        if (!scene.FindByType<GUI>(out _)) scene.Spawn(new GUI());
         
         currentScene = nextScene;
         nextScene = "";

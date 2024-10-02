@@ -1,20 +1,14 @@
 ﻿using SFML.Graphics;
+using SFML.Window;
 
 namespace pacman;
 
-public delegate void ValueChangedEvent(Scene scene, int value);
-
 public sealed class Scene
 {
-    public event ValueChangedEvent? GainScore;
-    public event ValueChangedEvent? LoseHealth;
-
-    private int scoreGained;
-    private int healthLost;
-    
     private List<Entity> entities = new();
     public readonly SceneLoader Loader = new();
     public readonly AssetManager AssetManager = new();
+    public readonly EventManager EventManager = new(); 
     
     public void Spawn(Entity entity)
     {
@@ -27,8 +21,12 @@ public sealed class Scene
         for (int i = entities.Count - 1; i >= 0; i--)
         {
             Entity entity = entities[i];
-            entities.RemoveAt(i);
-            entity.Destroy(this);
+
+            if (!entity.DontDestroyOnLoad)
+            {
+                entities.RemoveAt(i);
+                entity.Destroy(this);    
+            }
         }
     }
 
@@ -40,16 +38,7 @@ public sealed class Scene
             if (!entity.Dead) entity.Update(this, deltaTime);
         }
 
-        if (scoreGained != 0)
-        {
-            GainScore?.Invoke(this, scoreGained);
-            scoreGained = 0;
-        }
-        if (healthLost != 0)
-        {
-            LoseHealth?.Invoke(this, healthLost);
-            healthLost = 0;
-        }
+        EventManager.BroadcastEvents(this);
     }
 
     public void RenderAll(RenderTarget target)
@@ -90,6 +79,6 @@ public sealed class Scene
         }
     }
 
-    public void PublishGainScore(int amount) => scoreGained += amount;
-    public void PublishLostHealth(int amount) => healthLost += amount;
+    
+
 }

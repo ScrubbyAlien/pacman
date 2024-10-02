@@ -8,6 +8,7 @@ public class Entity
     private string textureName;
     protected Sprite sprite = new();
     public bool Dead = false;
+    public bool DontDestroyOnLoad = false;
 
     protected Entity(string textureName)
     {

@@ -18,7 +18,7 @@ public class Actor : Entity
         (int)MathF.Floor(Position.X) % 18 == 0 &&
         (int)MathF.Floor(Position.Y) % 18 == 0;
 
-    protected void Reset()
+    protected virtual void Reset()
     {
         wasAligned = false;
         Position = originalPosition;
