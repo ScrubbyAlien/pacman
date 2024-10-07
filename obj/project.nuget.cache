@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "u42LgMHR0bluC9JiHayrveFXXvd3pN8fLu/dYd08uG2AA5RA8WDS1Ux+fbQevDvCsluSyb0Irmif3vPh5IN1Pg==",
+  "dgSpecHash": "u32M0QPV3nU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\a24sames\\RiderProjects\\pacman\\pacman.csproj",
+  "projectFilePath": "C:\\Users\\samue\\RiderProjects\\pacman\\pacman.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\a24sames\\.nuget\\packages\\csfml\\2.6.0\\csfml.2.6.0.nupkg.sha512",
-    "C:\\Users\\a24sames\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
-    "C:\\Users\\a24sames\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
-    "C:\\Users\\a24sames\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
-    "C:\\Users\\a24sames\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
-    "C:\\Users\\a24sames\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
+    "C:\\Users\\samue\\.nuget\\packages\\csfml\\2.6.0\\csfml.2.6.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
   ],
   "logs": [
     {

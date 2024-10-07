@@ -40,7 +40,6 @@ public class SceneLoader
         if (nextScene == "") return;
         scene.Clear();
 
-        // file path hardcoded, make variable if more levels will be added
         List<string> maze = File.ReadLines($"assets/{nextScene}.txt", Encoding.UTF8).ToList();
 
         List<Entity> loadLast = new List<Entity>();

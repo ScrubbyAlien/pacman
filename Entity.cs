@@ -33,6 +33,9 @@ public class Entity
     
     public virtual void Update(Scene scene, float deltaTime)
     {
+        // this is so slow, should only check for collisions with relevant entities
+        // could do this by giving FindIntersects a generic type parameter and implement loop in 
+        // child classes' own overriden update method, instead of here
         foreach (Entity found in scene.FindIntersects(Bounds))
         {
             CollideWith(scene, found);

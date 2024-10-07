@@ -23,7 +23,7 @@ class Program
                 window.DispatchEvents();
 
                 float deltaTime = clock.Restart().AsSeconds();
-                deltaTime = MathF.Min(deltaTime, 0.01f);
+                deltaTime = MathF.Min(deltaTime, 0.01f); // see IsAligned comment in Actor.cs
                 
                 scene.UpdateAll(deltaTime);
                 

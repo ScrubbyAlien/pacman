@@ -14,7 +14,9 @@ public class Actor : Entity
 
     protected Actor(string textureName) : base(textureName) { }
 
-    protected bool IsAligned => //doesn't work if FPS < 100??????
+    // doesn't work if FPS < speed because actor could move more than one pixel per frame
+    // potentially skipping a position when it would be aligned
+    protected bool IsAligned => 
         (int)MathF.Floor(Position.X) % 18 == 0 &&
         (int)MathF.Floor(Position.Y) % 18 == 0;
 

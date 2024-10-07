@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a24sames\\RiderProjects\\pacman\\pacman.csproj": {}
+    "C:\\Users\\samue\\RiderProjects\\pacman\\pacman.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a24sames\\RiderProjects\\pacman\\pacman.csproj": {
+    "C:\\Users\\samue\\RiderProjects\\pacman\\pacman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a24sames\\RiderProjects\\pacman\\pacman.csproj",
+        "projectUniqueName": "C:\\Users\\samue\\RiderProjects\\pacman\\pacman.csproj",
         "projectName": "pacman",
-        "projectPath": "C:\\Users\\a24sames\\RiderProjects\\pacman\\pacman.csproj",
-        "packagesPath": "C:\\Users\\a24sames\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a24sames\\RiderProjects\\pacman\\obj\\",
+        "projectPath": "C:\\Users\\samue\\RiderProjects\\pacman\\pacman.csproj",
+        "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samue\\RiderProjects\\pacman\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\a24sames\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
